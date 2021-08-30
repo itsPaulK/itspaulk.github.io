@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+/*----Font color-----*/
+H1 {
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-family: hahmlet, serif;
+}
+
+body {
+    font-family: 'Hahmlet', serif;
+    background-color: rgb(255, 255, 255);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*----Navigation Bar-----*/
+.logo {
+    height: 80px;
+}
+
+.main-header {
+    /*background-image: linear-gradient(to right, rgb(49, 49, 49) , rgb(246, 250, 244));*/
+    background: white;
+    margin: -10px -7.9px;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.main-nav a {
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    /*text-shadow: 5px 2px 40px black;*/
+    display: block;
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    font-size: .95em;
+    text-decoration: none;
+}
+
+/*----Main Page Background Image-----*/
+.container {
+    position: relative;
+    text-align: center;
+    margin: -40px -8px;
+}
+
+.card__image2 {
+    max-width: 100%;
+}
+
+/*----Hashtag #iamrcf-----*/
+/*.bottom-right {
+    color: green;
+    position: absolute;
+    bottom: 45px;
+    right: 30px;
+    text-align: center;
+    background-color: #2d2e2d;
+    font-size: 2rem;
+    width: 180px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 7px;
+}*/
+
+/*----Mid Text Never Stop Learning-----*/
+.title1 {
+    text-align: center;
+    padding: 50px;
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+.feature_divider {
+    width: auto;
+    margin: 10px;
+    margin-bottom: 30px;
+    display: block;
+    border: 0;
+    border-color: #888;
+    border-bottom-width: 1.5px;
+    border-bottom-style: solid;
+}
+
+/*----Mid Body Blog 3 photos-----*/
+
+.cards {
+   margin: 0 auto;
+   max-width: 2000px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   font-family: hahmlet, serif;
+}
+
+.card {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.card__image {
+    width: 100%;
+    display: block;
+}
+
+.card__content {
+    line-height: 1.5;
+    font-size: 0.8em;
+    padding: 15px;
+    background: #fafafa;
+    font-family: 'Lato', sans-serif;
+}
+
+.card__content p {
+    margin-top: 0;
+}
+
+.title2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+/*----Buttons 3 Photos Column-----*/
+button {
+    margin: 20px;
+    outline: none;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px, 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-1 {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-1:hover {
+    background: transparent;
+    color: #000;
+     box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+  }
+
+  .btn-1:before,
+  .btn-1:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:1px;
+    width:0;
+    background: rgb(0, 0, 0);
+    transition:400ms ease all;
+  }
+
+  .btn-1:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+
+  .btn-1:hover:before,
+  .btn-1:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+/*----Footer Fonts-----*/
+.col-1 {
+    font-size: 14px;
+    font-family: 'Lato' sans-serif;
+}
+
+.rights {
+    font-family: 'Lato' sans-serif;
+}
+
+/*----Footer Layout-----*/
+.footer-logo1 {
+    height: 90px;
+    transition: all .5s;
+}
+
+.footer-logo1:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+
+
+
+/*----Media Queries-----*/
+
+@media (min-width: 320px) {
+
+    .main-header,
+    .main-nav,
+    .cards {
+        display: flex;
+    }
+
+    .main-header,
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        flex: 1 50%;
+    }
+
+    .cards {
+       flex-wrap: wrap; 
+    }
+
+   .footer-logo1 {
+       display: block;
+       margin-top: 3em;
+       margin-bottom: 2em;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    .col-1 {
+        letter-spacing: -.01em;
+        max-width: 100%;
+        padding: 0 1px 100px 1px;
+    }
+}
+
+@media (min-width: 1020px) {
+    
+    .main-header,
+    .main-nav {
+        flex-direction: row;
+        justify-content:space-around;
+    }
+
+    .logo {
+        margin-bottom: 1.5em;
+    }
+
+    .card {
+        flex-basis: 0;
+    }
+
+    .footer-logo1 {
+        margin: 90px;
+        display: block;
+        margin-left: 50px;
+        margin-right: auto;
+    }
+
+    .col-1 {
+        display: block;
+        max-width: 600px;
+        margin-left: 200px;
+        margin-right: auto;
+        margin-top: -200px;
+        margin-bottom: auto;
+    }
+}
